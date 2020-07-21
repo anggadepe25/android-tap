@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.login.LoginActivity">
+
+    
+    <View
+        android:id="@+id/v_bg"
+        android:background="@drawable/ic_wave"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    </View>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/card_user"
+        android:id="@+id/img_user"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_user"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="24sp"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@drawable/round_border_outline"
+                    android:paddingLeft="15sp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Masukkan Email Anda"
+                    android:paddingTop="12sp"
+                    android:paddingBottom="12sp"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@drawable/round_border_outline"
+                    android:paddingLeft="15sp"
+                    android:inputType="textPassword"
+                    android:hint="Masukkan Password Anda"
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:textColor="#fff"
+                android:background="@drawable/round_border"
+                android:text="login"
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#03A9F4"
+                android:layout_marginTop="15sp"
+                android:text="Forgot Password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_wave_down"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+</RelativeLayout>

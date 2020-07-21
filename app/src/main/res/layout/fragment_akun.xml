@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_up"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_user"
+                    app:civ_border_color="#000"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/profile_image"
+                    android:text="Edit Profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_middle"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_below="@id/cv_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_akun"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_akun"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_user"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="25sp"
+                        android:textSize="18sp"
+                        android:text="Akun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/cardview_dark_background"
+                    android:id="@+id/v_akun"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible"
+                    android:layout_below="@id/ll_akun"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_below="@id/v_akun"
+                    android:id="@+id/ll_password"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_password"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/ic_lock"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="22sp"
+                        android:layout_toRightOf="@id/ic_akun"
+                        android:textSize="18sp"
+                        android:text="Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_doen"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@id/cv_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_about"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_about"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_info"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="25sp"
+                        android:textSize="18sp"
+                        android:text="About"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/cardview_dark_background"
+                    android:id="@+id/v_about"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible"
+                    android:layout_below="@id/ll_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_below="@id/v_about"
+                    android:id="@+id/ll_logout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_logout"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_exit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="22sp"
+                        android:layout_toRightOf="@id/ic_akun"
+                        android:textSize="18sp"
+                        android:text="Logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>
