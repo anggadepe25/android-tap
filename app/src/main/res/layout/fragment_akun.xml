@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -35,10 +36,12 @@
                     android:layout_marginBottom="30dp"/>
 
                 <TextView
-
+                    android:textSize="20sp"
+                    android:id="@+id/profile_name"
+                    android:fontFamily="@font/poppinssemibold"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@id/profile_image"
-                    android:text="Edit Profil"
+                    android:text="Nama"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -78,6 +81,7 @@
                     <TextView
                         android:layout_marginLeft="15sp"
                         android:layout_marginTop="25sp"
+                        android:fontFamily="@font/poppinsregular"
                         android:textSize="18sp"
                         android:text="Akun"
                         android:layout_width="wrap_content"
@@ -114,6 +118,7 @@
                         android:id="@+id/tv_password"
                         android:layout_marginLeft="15sp"
                         android:layout_marginTop="22sp"
+                        android:fontFamily="@font/poppinsregular"
                         android:layout_toRightOf="@id/ic_akun"
                         android:textSize="18sp"
                         android:text="Password"
@@ -159,6 +164,7 @@
                         android:layout_marginLeft="15sp"
                         android:layout_marginTop="25sp"
                         android:textSize="18sp"
+                        android:fontFamily="@font/poppinsregular"
                         android:text="About"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -195,6 +201,7 @@
                         android:layout_marginLeft="15sp"
                         android:layout_marginTop="22sp"
                         android:layout_toRightOf="@id/ic_akun"
+                        android:fontFamily="@font/poppinsregular"
                         android:textSize="18sp"
                         android:text="Logout"
                         android:layout_width="wrap_content"

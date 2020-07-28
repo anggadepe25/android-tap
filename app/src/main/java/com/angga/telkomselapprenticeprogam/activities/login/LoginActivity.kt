@@ -54,7 +54,9 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             val email = et_email.text.toString().trim()
             val pasword = et_password.text.toString().trim()
-            loginViewModel.login(email, pasword)
+            if (loginViewModel.validate(email, pasword)){
+                loginViewModel.login(email,pasword)
+            }
         }
     }
 

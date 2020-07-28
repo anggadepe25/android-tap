@@ -37,17 +37,17 @@ class LoginViewModel (private val userRepository: UserRepository) : ViewModel(){
         reset()
         if (email.isEmpty() || password.isEmpty()){
             state.value =
-                LoginState.ShowToast("mohon isi semua form")
+                LoginState.ShowToast("Mohon Isi Semua Form")
             return false
         }
         if (!Constants.isValidEmail(email)){
             state.value =
-                LoginState.Validate(email = "email tidak valid")
+                LoginState.Validate(email = "Email Tidak Valid")
             return false
         }
         if (!Constants.isValidPassword(password)){
             state.value =
-                LoginState.Validate(password = "password tidak valid")
+                LoginState.Validate(password = "Password Tidak Valid")
             return false
         }
 

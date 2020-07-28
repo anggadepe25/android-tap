@@ -26,7 +26,7 @@ class DetailProgramActivity : AppCompatActivity() {
 
         detailProgramViewModel.listenToState().observer(this, Observer { handleUI(it) })
         send()
-        getPassedProgram()?.let {
+        getPassedProgram(   )?.let {
             img_program.load(it.gambar)
             supportActionBar?.title = it.judul
             txt_panduan.text = it.panduan

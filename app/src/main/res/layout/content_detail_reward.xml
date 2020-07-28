@@ -14,6 +14,8 @@
 
         <TextView
             android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_margin="20sp"
             android:id="@+id/txt_keterangan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

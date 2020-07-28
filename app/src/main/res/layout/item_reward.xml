@@ -25,6 +25,8 @@
             android:id="@+id/txt_name_reward"
             android:gravity="center"
             android:textSize="14sp"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/poppinsregular"
             android:text="aaa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
