@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.edit_password.activity_edit_password"></activity>
-        <activity android:name=".activities.edit_profil.activity_edit_profil" />
+        <activity android:name=".activities.edit_profil.activity_edit_profil"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".activities.detail_info.DetailInfoActivity"
             android:label="@string/title_activity_info_reward"

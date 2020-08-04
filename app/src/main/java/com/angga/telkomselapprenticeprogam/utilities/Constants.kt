@@ -7,7 +7,7 @@ import java.util.*
 
 class Constants {
     companion object{
-        val END_POINT = "https://web-tap.herokuapp.com/"
+        val END_POINT = "https://web-tap.tugas-akhir.com/"
         val token = "Bearer Bohqrc9pmBqcE6bOrslhH4IftJmqfNt4TMlWWD6VjtDTX6q0IzuGp0RcQb8E8ldpRyCtbx2yEJo1wIP9"
 
 
