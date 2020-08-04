@@ -2,6 +2,7 @@ package com.angga.telkomselapprenticeprogam
 
 import android.app.Application
 import com.angga.telkomselapprenticeprogam.activities.detail_program.DetailProgramViewModel
+import com.angga.telkomselapprenticeprogam.activities.edit_password.EditPasswordViewModel
 import com.angga.telkomselapprenticeprogam.activities.edit_profil.ActivityEditProfileViewModel
 import com.angga.telkomselapprenticeprogam.activities.login.LoginViewModel
 import com.angga.telkomselapprenticeprogam.fragments.home_fragment.HomeViewModel
@@ -43,4 +44,5 @@ val viewModelModules = module {
     viewModel { LoginViewModel(get()) }
     viewModel { DetailProgramViewModel(get()) }
     viewModel { ActivityEditProfileViewModel(get()) }
+    viewModel { EditPasswordViewModel(get()) }
 }

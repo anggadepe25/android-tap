@@ -4,7 +4,9 @@ import com.angga.telkomselapprenticeprogam.models.*
 import com.angga.telkomselapprenticeprogam.utilities.Constants
 import com.angga.telkomselapprenticeprogam.utilities.WrappedListResponse
 import com.angga.telkomselapprenticeprogam.utilities.WrappedResponse
+import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -45,6 +47,27 @@ interface ApiService{
     fun login(
         @Field("email") email : String,
         @Field("password") password : String
+    ) : Call<WrappedResponse<User>>
+
+    @Headers("Content-Type: application/json")
+    @POST("api/user/profile/update")
+    fun updateProfile(
+        @Header("Authorization") token :String,
+        @Body body: RequestBody
+    ) : Call<WrappedResponse<User>>
+
+    @Multipart
+    @POST("api/user/profile/update/photo")
+    fun updatePhotoProfile(
+        @Header("Authorization") token : String,
+        @Part image : MultipartBody.Part
+    ) :Call<WrappedResponse<User>>
+
+    @FormUrlEncoded
+    @POST("api/user/profile/update/password")
+    fun updatePassword(
+        @Header("Authorization") token :String,
+        @Field("password") password: String
     ) : Call<WrappedResponse<User>>
 
     @GET("api/news")

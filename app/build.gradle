@@ -64,4 +64,5 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:2.0.1"
     implementation "io.coil-kt:coil:0.9.5"
 
+    implementation  'com.fxn769:pix:1.5.3'
 }
